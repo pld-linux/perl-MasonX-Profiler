@@ -6,7 +6,7 @@
 %define	pdir	MasonX
 %define	pnam	Profiler
 Summary:	MasonX::Profiler - Mason per-component profiler
-#Summary(pl):	
+Summary(pl):	MasonX::Profiler - profiler dla komponentów Masona
 Name:		perl-MasonX-Profiler
 Version:	0.04
 Release:	1
@@ -15,7 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	dbc6126755a7561ceaa31cb2e7a0f3d9
-BuildRequires:	perl-devel >= 1:5.8
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-HTML-Mason
@@ -24,11 +24,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module prints per-component profiling information to STDERR (usually
-directed to the Apache error log).  Its output looks like this:
+This module prints per-component profiling information to STDERR
+(usually directed to the Apache error log).
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ wypisuje informacje profiluj±ce dla ka¿dego komponentu na
+STDERR (zwykle przekierowane do logu b³êdów Apache'a).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -52,5 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/%{pdir}/*.pm
+%{perl_vendorlib}/MasonX/*.pm
 %{_mandir}/man3/*
