@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MasonX
-%define	pnam	Profiler
+%define		pdir	MasonX
+%define		pnam	Profiler
 Summary:	MasonX::Profiler - Mason per-component profiler
 Summary(pl):	MasonX::Profiler - profiler dla komponentów Masona
 Name:		perl-MasonX-Profiler
