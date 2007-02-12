@@ -6,7 +6,7 @@
 %define		pdir	MasonX
 %define		pnam	Profiler
 Summary:	MasonX::Profiler - Mason per-component profiler
-Summary(pl):	MasonX::Profiler - profiler dla komponentów Masona
+Summary(pl.UTF-8):   MasonX::Profiler - profiler dla komponentÃ³w Masona
 Name:		perl-MasonX-Profiler
 Version:	0.06
 Release:	1
@@ -27,9 +27,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module prints per-component profiling information to STDERR
 (usually directed to the Apache error log).
 
-%description -l pl
-Ten modu³ wypisuje informacje profiluj±ce dla ka¿dego komponentu na
-STDERR (zwykle przekierowane do logu b³êdów Apache'a).
+%description -l pl.UTF-8
+Ten moduÅ‚ wypisuje informacje profilujÄ…ce dla kaÅ¼dego komponentu na
+STDERR (zwykle przekierowane do logu bÅ‚Ä™dÃ³w Apache'a).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
