@@ -6,7 +6,7 @@
 %define		pdir	MasonX
 %define		pnam	Profiler
 Summary:	MasonX::Profiler - Mason per-component profiler
-Summary(pl.UTF-8):   MasonX::Profiler - profiler dla komponentów Masona
+Summary(pl.UTF-8):	MasonX::Profiler - profiler dla komponentów Masona
 Name:		perl-MasonX-Profiler
 Version:	0.06
 Release:	1
