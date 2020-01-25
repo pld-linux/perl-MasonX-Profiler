@@ -4,7 +4,6 @@
 
 %define		pdir	MasonX
 %define		pnam	Profiler
-%include	/usr/lib/rpm/macros.perl
 Summary:	MasonX::Profiler - Mason per-component profiler
 Summary(pl.UTF-8):	MasonX::Profiler - profiler dla komponentów Masona
 Name:		perl-MasonX-Profiler
